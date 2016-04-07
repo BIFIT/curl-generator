@@ -1,0 +1,1 @@
+<script>"use strict";var generateCurlAnswer=function(e,r,a){var s='"X-Auth-Token: '+window.sessionStorage.token+'"';switch(e){case"GET":e="-X GET",r="";break;case"POST":e="-X POST -d",r="'"+r+"'";break;case"PUT":e="-X PUT -d",r="'"+r+"'";break;case"DELETE":e="-X DELETE -H",r="'"+r+"'"}var n="curl --noproxy '*' -k -H "+s+" "+e+" "+r+" '"+a+"'";return console.log(n),n};</script>
